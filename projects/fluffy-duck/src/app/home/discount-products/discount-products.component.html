@@ -1,0 +1,27 @@
+<!-- <div class="container">
+  <div class="row cursor">
+    <span id="brev">brev</span>
+    <div id="card-container" style="overflow: hidden" class="d-flex">
+      <app-product-card
+        class="item col-xl-3 col-md-4 col-sm-5 col-10"
+        *ngFor="let product of shownProducts"
+        [product]="product"
+      ></app-product-card>
+    </div>
+    <span id="next" #next>next</span>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row justify-content-center cursor d-flex ">
+    <span id="next"(click)="nextProduct()"  >next</span>
+
+    <span id="brev" (click)="brevProduct()"  >brev</span>
+
+      <app-product-card
+        class="item col-xl-3 col-md-4 col-sm-5 col-9"
+        *ngFor="let product of shownProducts"
+        [product]="product"
+      ></app-product-card>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.card{
+    border-radius: 15px
+}
+.card-title {
+    cursor: pointer;
+}
+.age3{
+   border-color: #dc3545;
+    background-color: #ff5964;
+    color:white ;
+ }
+ img{
+    border-radius:13px 13px 0px 0px;
+ }
+ 
+ .age1{
+    background-color: #fdb62f;
+    border-color: #db8427;
+
+    color:white ;
+
+ }
+ .age2{
+   border-color: #13a897;
+
+    background-color: #16c3b0;
+    color:white ;
+ }
+ .age5{
+    background-color: #986aa5;
+    border-color: #633f6d;
+
+    color:white ;
+ }
+ .age4{
+    background-color: #58bb62;
+    color:white ;
+ }
+ .age6{
+   background-color: #0087f2;
+   background-color: #0b72c4;
+   color:white ;
+}

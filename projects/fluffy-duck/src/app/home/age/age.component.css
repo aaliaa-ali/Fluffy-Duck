@@ -1,0 +1,30 @@
+.age0{
+    background-color: #ff5964;
+}
+
+.age1{
+    background-color: #fdb62f;
+}
+.age2{
+    background-color: #16c3b0;
+}
+.age3{
+    background-color: #986aa5;
+}
+.age4{
+    background-color: #58bb62;
+}
+h1{
+    color: #ff5964;
+}
+.price span{
+    color: white;
+    font-weight: 400;
+}
+.price > span:first-child {
+    top: 45%;  
+ }
+.price > span:nth-of-type(2) {
+    font-size: 25px;
+    top: 65%;  
+ }

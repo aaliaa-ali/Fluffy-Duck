@@ -1,0 +1,21 @@
+footer{
+    padding-top: 20px;
+   background-color: #343a40 ;
+   color: white; 
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+.heading{
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.logo{
+    border-radius: 50%;
+    width: 85px;
+}

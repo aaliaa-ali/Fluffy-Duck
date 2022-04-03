@@ -1,0 +1,36 @@
+
+<div class="productCard">
+  <span *ngIf=" +product.discount" class="rounded-circle discount">{{ product.discount | discount}}</span>
+
+  <div class="card border-0">
+ 
+    <img src="{{ product.img }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <div class="text-center">
+        <h5 class="card-title text-primary fw-bold mt-2">{{ product.name }}</h5>
+        <p class="card-text mb-0">
+          <span> {{( product.discount?product.price-(+product.discount*product.price/100):product.price )| currency: "EGP"}}</span>
+          <span *ngIf="product.discount"class="text-decoration-line-through">
+            {{ product.price | currency: "EGP" }}</span
+          >
+        </p>
+        <p class="m-0">{{product.age}}Years</p>
+      </div>
+      <div class="actions mt-1">
+        <span
+          (click)="addToFavourite(product)"
+          [ngClass]="{ addFav: !inFavourites, inFav: inFavourites }"
+        >
+          <i
+            [ngClass]="{ addFev: inFavourites, inFev: !inFavourites }"
+            class="fa-solid fa-heart"
+          ></i>
+        </span>
+        <span (click)="addToFavourite(product)" class="addCart mt-2">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+

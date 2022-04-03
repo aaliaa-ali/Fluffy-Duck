@@ -1,0 +1,16 @@
+.container{
+    padding: 50px 0px;
+}
+
+form{
+    padding: 20px;
+}
+input:hover{
+    border: 1px solid red;
+}
+button{
+    width: 100%;
+}
+.form-container{
+    margin-top: 200px;
+}

@@ -1,0 +1,17 @@
+#brev{
+    position: absolute;
+    width: 50px;
+    z-index: 1;
+    right: -50px;
+    top: 30%;
+}
+#next{
+    position: absolute;
+    width: 50px;
+    z-index: 1;
+    top: 30%;
+    left: -50px;
+}
+.cursor{
+    position: relative;
+}

@@ -1,0 +1,99 @@
+    <div class="form-container row justify-content-center">
+        <form [formGroup]="registerForm">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">اسمك</label>
+            <input type="text" formControlName="name" class="form-control" />
+            <div
+              *ngIf="
+                  registerForm.get('name')?.errors?.['required'] &&
+                  registerForm.get('name')?.touched
+                "
+            >
+              أدخل اسمك
+            </div>
+            <div
+              *ngIf="
+                  registerForm.get('name')?.invalid &&
+                  registerForm.get('name')?.touched&&
+                  !registerForm.get('name')?.errors?.['required'] 
+                "
+            >
+              اسمك الذي أدخلته غير صالح
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >البريد الإلكتروني</label
+            >
+            <input type="text" class="form-control" formControlName="email" />
+            <div
+              *ngIf="
+                  registerForm.get('email')?.errors?.['required'] &&
+                  registerForm.get('email')?.touched
+                "
+            >
+              أدخل بريدك الإلكتروني
+            </div>
+            <div
+              *ngIf="
+                  registerForm.get('email')?.invalid &&
+                  registerForm.get('email')?.touched&&
+                 !registerForm.get('email')?.errors?.['required']
+                "
+            >
+              البريد الإلكتروني الذي أدخلته غير صالح
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >كلمة المرور</label
+            >
+            <input type="password" class="form-control" formControlName="password" />
+            <div
+              *ngIf="
+                registerForm.get('password')?.errors?.['required'] &&
+                registerForm.get('password')?.touched
+              "
+            >
+              أدخل كلمه المرور
+            </div>
+            <div
+              *ngIf="
+                  registerForm.get('password')?.invalid &&
+                  registerForm.get('password')?.touched&&
+                  !registerForm.get('password')?.errors?.['required'] 
+                "
+            >
+              كلمه المرور يجب ان لاتقل عن 6 احرف
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >إعادة إدخال كلمة المرور</label
+            >
+            <input type="password" class="form-control" formControlName="password_confirmation" />
+            <div
+              *ngIf="
+              registerForm.get('password_confirmation')?.errors?.['required'] &&
+              registerForm.get('password_confirmation')?.touched
+            "
+            >
+              أدخل كلمه المرور
+            </div>
+            <div
+              *ngIf="
+                registerForm.get('password_confirmation')?.errors?.['invalid'] &&
+                registerForm.get('password_confirmation')?.touched &&
+                ! registerForm.get('password_confirmation')?.errors?.['required']
+              "
+            >
+              كلمه المرورغير متطابقه
+            </div>
+          </div>
+    
+          <button type="submit" (click)="submit()" class="btn btn-primary">
+            متابعه
+          </button>
+        </form>
+    </div>
+    

@@ -1,0 +1,14 @@
+.img{
+    background-image: url(../../assets/imgs/kid_transparent.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    height: 100%;
+    }
+
+    .details{
+        position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    }

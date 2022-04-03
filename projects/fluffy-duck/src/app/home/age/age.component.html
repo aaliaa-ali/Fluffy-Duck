@@ -1,0 +1,47 @@
+<div class="site-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h1 class="fw-bold mb-5 text-center">تسوق حسب السن</h1>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6"  *ngFor="let age of ages ;let i=index" (click)="goProducts(age)">
+        <div class="pricing  text-center">
+          <span class="price age{{i}}">
+            <span>{{age}}</span>
+            <br>
+            <span>years</span>
+
+          </span>
+        </div>
+      </div>
+      <!-- <div class="col-md-2">
+        <div class="pricing danger text-center">
+          <span class="price">
+            <span>8-11</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="pricing danger text-center">
+          <span class="price">
+            <span>5-8</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-2" (click)="goProducts('3-5')">
+        <div class="pricing teal text-center">
+          <span class="price">
+            <span>3-5</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="pricing teal text-center">
+          <span class="price">
+            <span>0-3</span>
+          </span>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

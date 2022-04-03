@@ -1,0 +1,17 @@
+<div class="site-section bg-info">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <!-- <span class="text-cursive h5 text-red d-block ">Packages You Like</span> -->
+        <h1 class="text-primary fw-bold">اهم التصنيفات</h1>
+      </div>
+    </div>
+    <div   class="row  justify-content-center">
+      <app-category-card
+        *ngFor="let category of categories"
+        [category]="category"
+        class=" col-md-4 col-sm-6 col-9 mb-4 mb-lg-0"
+      ></app-category-card>
+    </div>
+  </div>
+</div>
