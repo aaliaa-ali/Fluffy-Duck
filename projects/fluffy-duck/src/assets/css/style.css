@@ -11,9 +11,9 @@
 a:hover{
   cursor: pointer;
 }
-*{
+/* *{
   font-family:Changa;   ;
-}
+} */
 .btn-primary{
   color: #fff;
   background-color: #ff5964;
@@ -1903,7 +1903,7 @@ h1, h2, h3, h4, h5,
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 40px;
+    font-size: 37px;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }

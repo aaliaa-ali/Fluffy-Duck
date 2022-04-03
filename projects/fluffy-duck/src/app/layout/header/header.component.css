@@ -18,21 +18,20 @@ nav {
 }
 .location i {
   font-size: 35px;
-  margin-left: 5px;
+  margin-right: 5px;
   color: yellow;
 }
 .workHours i {
   font-size: 35px;
-  margin-left: 5px;
+  margin-right: 5px;
   color: #ff5964;
 }
 .register {
-  padding: 3px;
+  padding: 2px;
   margin: 0;
   background-color: #ff5964;
   text-align: center;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 14px;
 }
 .register a {
   color: white;
